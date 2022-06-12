@@ -85,7 +85,7 @@ main {
   color: chartreuse;
   margin-bottom: 1rem;
 }
-#tasks {
+#tasks .task {
   display: flex;
   justify-content: space-between;
   background-color: var(--darkest);
@@ -94,20 +94,29 @@ main {
   margin-bottom: 1rem;
 }
 
-.task {
+/* .task {
   display: flex;
   justify-content: space-between;
   background-color: var(--darkest);
   padding: 1rem;
   border-radius: 1rem;
   margin-bottom: 1rem;
-}
+} */
 #tasks .task .content .text {
   color: var(--light);
   font-size: 16px;
   display: block;
   transition: 0.4s;
 }
-#task .task .content .text:not(:read-only) {
+#task,
+.task,
+.content,
+.text:not(:read-only) {
   color: var(--pink);
+}
+.edit {
+  color: #8b5cf6;
+}
+.delete {
+  color: red;
 }
