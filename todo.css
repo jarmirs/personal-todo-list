@@ -115,8 +115,21 @@ main {
   color: var(--pink);
 }
 .edit {
-  color: #8b5cf6;
+  background-image: linear-gradient(to right, var(--pink), var(--purple));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 .delete {
   color: red;
+}
+.actions button {
+  cursor: pointer;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.actions button:active {
+  opacity: 0.6;
+}
+.actions button:hover {
+  opacity: 0.8;
 }
